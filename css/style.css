@@ -172,15 +172,9 @@ img{
 ================================================== */
 
 .navbar{
-
-    padding:18px 0;
-
-    background:rgba(20,20,20,.18);
-
+    background:rgba(22,22,22,.75);
     backdrop-filter:blur(16px);
-
-    border-bottom:1px solid rgba(255,255,255,.15);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .navbar-brand{
@@ -824,4 +818,3 @@ transform:none;
     scroll-margin-top:90px;
 
     }
-    
