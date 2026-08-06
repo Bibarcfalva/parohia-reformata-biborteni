@@ -52,7 +52,7 @@ img{
     overflow:hidden;
 
     background:
-    linear-gradient(rgba(25,25,25,.35),rgba(25,25,25,.45)),
+    linear-gradient(rgba(20,20,20,.20),rgba(20,20,20,.30)),
     url("../images/hero/hero.jpg");
 
     background-size:cover;
@@ -267,7 +267,19 @@ img{
     padding:15px 40px;
 
 }
+.btn{
 
+    transition:all .35s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.20);
+
+}
 
 /* =======================
    DESPRE
@@ -334,7 +346,7 @@ h2{
 
     transition:.35s;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 
 }
 
@@ -630,5 +642,123 @@ font-size:24px;
     color:#aaa;
 
     font-size:15px;
+
+}
+
+/* ====================================
+TIMELINE
+==================================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:70px auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:70px;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    background:#c8a24d;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+}
+
+.timeline-year{
+
+    min-width:140px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#b08d3b;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.timeline-year::after{
+
+    content:"";
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#b08d3b;
+
+    position:absolute;
+
+    right:-10px;
+
+    top:10px;
+
+    border:5px solid white;
+
+}
+
+.timeline-content{
+
+    margin-left:50px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.timeline-content h4{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-content p{
+
+    margin:0;
 
 }
