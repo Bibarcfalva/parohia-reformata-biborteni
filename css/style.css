@@ -1,76 +1,195 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
-    font-family: 'Lato', sans-serif;
+    font-family:'Lato',sans-serif;
+
+    background:#f5f2eb;
+
+    color:#2f2f2f;
+
+    line-height:1.8;
 
 }
 
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
 .hero{
 
-    height:100vh;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
 
     background:
-        linear-gradient rgba(0,0,0,.45), rgba(0,0,0,.45),
-        url("../images/hero/hero.jpg");
+    linear-gradient(rgba(25,25,25,.35),rgba(25,25,25,.45)),
+    url("../images/hero/hero.jpg");
 
     background-size:cover;
+
     background-position:center;
-    background-repeat:no-repeat;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:180px;
+
+    background:linear-gradient(to bottom,
+    rgba(245,242,235,0),
+    #f5f2eb);
+
+}
+
+.hero-overlay{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:100px 20px;
+
+}
+
+.hero-box{
+
+    max-width:900px;
+
+    padding:80px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.30);
+
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    background:#b08d3b;
 
     color:white;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    letter-spacing:2px;
 
-    text-align:center;
+    font-size:14px;
+
+    text-transform:uppercase;
 
 }
 
 .hero h1{
 
-    font-family:'Cormorant Garamond', serif;
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:88px;
+    font-size:82px;
 
-    font-weight:700;
+    color:white;
 
-    text-shadow:0 3px 20px rgba(0,0,0,.6);
+    line-height:1.05;
+
+    margin-bottom:25px;
 
 }
 
 .hero p{
 
-    font-size:28px;
+    color:white;
 
-    margin:30px auto;
+    font-size:24px;
 
-    max-width:900px;
+    max-width:700px;
 
-    text-shadow:0 2px 15px rgba(0,0,0,.7);
+    margin:auto;
 
 }
 
-/* =========================
+.hero-buttons{
+
+    margin-top:45px;
+
+}
+
+/* ==================================================
    NAVBAR
-========================= */
+================================================== */
 
 .navbar{
 
-    padding:20px 0;
+    padding:18px 0;
 
-    background:rgba(0,0,0,.25);
+    background:rgba(20,20,20,.18);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(16px);
 
-    transition:.4s;
+    border-bottom:1px solid rgba(255,255,255,.15);
 
 }
 
 .navbar-brand{
 
-    font-weight:700;
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:28px;
+    font-size:32px;
+
+    color:white !important;
 
 }
 
@@ -78,63 +197,102 @@ body{
 
     color:white !important;
 
-    margin-left:18px;
+    margin-left:22px;
 
-    transition:.3s;
+    font-size:17px;
+
+    position:relative;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#b08d3b;
+
+    transition:.35s;
 
 }
 
 .nav-link:hover{
 
-    color:#d4af37 !important;
+    color:#d8bc72 !important;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
 
 }
 .btn-warning{
 
-    background:#c8a24d;
+    background:#b08d3b;
 
     border:none;
 
-    padding:16px 42px;
+    color:white;
+
+    padding:15px 40px;
 
     border-radius:50px;
 
-    font-size:20px;
-
-    transition:.4s;
+    transition:.35s;
 
 }
 
 .btn-warning:hover{
 
-    background:white;
-
-    color:#222;
+    background:#8c6b27;
 
     transform:translateY(-4px);
 
 }
+
+.btn-outline-light{
+
+    border-radius:50px;
+
+    padding:15px 40px;
+
+}
+
+
 /* =======================
    DESPRE
 ======================= */
 
-.about{
+.about,
+.history-preview,
+.pnrr-section,
+.ruta-section,
+.gallery-section{
 
-    padding:100px 0;
-
-    background:#ffffff;
+    padding:120px 0;
 
 }
 
-.about h2{
+h2{
 
-    font-family:'Cormorant Garamond', serif;
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:54px;
+    font-size:58px;
 
     margin-bottom:25px;
 
 }
+
 
 .about p{
 
@@ -168,17 +326,21 @@ body{
 
 }
 
-.history-preview .card{
+.card{
 
-    border-radius:18px;
+    border:none;
+
+    border-radius:22px;
 
     transition:.35s;
 
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
 }
 
-.history-preview .card:hover{
+.card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
 }
 
@@ -294,7 +456,7 @@ body{
 
 .ruta-image img{
 
-    border-radius:20px;
+    border-radius:18px;
 
 }
 /*=========================
@@ -352,5 +514,41 @@ box-shadow:0 15px 40px rgba(0,0,0,.15);
 .gallery-img:hover{
 
 transform:scale(1.04);
+
+}
+
+
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.hero-box{
+
+padding:40px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+h2{
+
+font-size:42px;
+
+}
+
+.navbar-brand{
+
+font-size:24px;
+
+}
 
 }
