@@ -1,0 +1,356 @@
+body{
+
+    font-family: 'Lato', sans-serif;
+
+}
+
+.hero{
+
+    height:100vh;
+
+    background:
+        linear-gradient rgba(0,0,0,.45), rgba(0,0,0,.45),
+        url("../images/hero/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:88px;
+
+    font-weight:700;
+
+    text-shadow:0 3px 20px rgba(0,0,0,.6);
+
+}
+
+.hero p{
+
+    font-size:28px;
+
+    margin:30px auto;
+
+    max-width:900px;
+
+    text-shadow:0 2px 15px rgba(0,0,0,.7);
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    padding:20px 0;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(10px);
+
+    transition:.4s;
+
+}
+
+.navbar-brand{
+
+    font-weight:700;
+
+    font-size:28px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#d4af37 !important;
+
+}
+.btn-warning{
+
+    background:#c8a24d;
+
+    border:none;
+
+    padding:16px 42px;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    transition:.4s;
+
+}
+
+.btn-warning:hover{
+
+    background:white;
+
+    color:#222;
+
+    transform:translateY(-4px);
+
+}
+/* =======================
+   DESPRE
+======================= */
+
+.about{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.about h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:54px;
+
+    margin-bottom:25px;
+
+}
+
+.about p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+/* ===========================
+   HISTORY
+=========================== */
+
+.history-preview{
+
+    background:#f8f8f8;
+
+    padding:100px 0;
+
+}
+
+.history-preview h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:54px;
+
+    margin-bottom:20px;
+
+}
+
+.history-preview .card{
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+.history-preview .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.history-preview h3{
+
+    color:#b58a2f;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.history-preview p{
+
+    color:#666;
+
+}
+
+/* ==========================
+   PNRR
+========================== */
+
+.pnrr-section{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.pnrr-section h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:54px;
+
+    margin-bottom:30px;
+
+}
+
+.pnrr-section p{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.pnrr-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin-top:30px;
+
+}
+
+.pnrr-list li{
+
+    font-size:19px;
+
+    margin-bottom:15px;
+
+}
+
+/*=========================
+      RUTA
+=========================*/
+
+.ruta-section{
+
+    padding:120px 0;
+
+    background:#faf8f4;
+
+}
+
+.section-subtitle{
+
+    color:#b08d57;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.ruta-section h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:58px;
+
+    margin:15px 0 30px;
+
+}
+
+.ruta-section p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.ruta-image img{
+
+    border-radius:20px;
+
+}
+/*=========================
+GALERIE
+=========================*/
+
+.gallery-section{
+
+padding:120px 0;
+
+background:#faf8f4;
+
+}
+
+.gallery-section h2{
+
+font-size:58px;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:20px;
+
+}
+
+.gallery-section p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:20px;
+
+margin-bottom:50px;
+
+}
+
+.gallery-img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+transition:.4s;
+
+cursor:pointer;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.gallery-img:hover{
+
+transform:scale(1.04);
+
+}
