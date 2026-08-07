@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parohia-reformata-biborteni.vercel.app/sitemap.xml
