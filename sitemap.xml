@@ -8,17 +8,17 @@
     </url>
 
     <url>
-        <loc>https://parohia-reformata-biborteni.vercel.app/index.html</loc>
-        <lastmod>2026-08-07</lastmod>
-    </url>
-
-    <url>
         <loc>https://parohia-reformata-biborteni.vercel.app/istoric.html</loc>
         <lastmod>2026-08-07</lastmod>
     </url>
 
     <url>
         <loc>https://parohia-reformata-biborteni.vercel.app/ruta.html</loc>
+        <lastmod>2026-08-07</lastmod>
+    </url>
+
+    <url>
+        <loc>https://parohia-reformata-biborteni.vercel.app/stiri.html</loc>
         <lastmod>2026-08-07</lastmod>
     </url>
 
@@ -33,8 +33,3 @@
     </url>
 
 </urlset>
-
-<url>
-    <loc>https://parohia-reformata-biborteni.vercel.app/stiri.html</loc>
-</url>
-
